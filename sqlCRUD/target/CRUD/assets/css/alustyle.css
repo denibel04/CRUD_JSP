@@ -1,0 +1,214 @@
+/******************************************************/
+/*       JSP + BBDD - hoja de estilo de alumnos       */
+/* Autora: Denisa Ramona Belean                       */
+/******************************************************/
+
+/******************** estilo general *******************/
+body {
+    /*background-image: url(../img/textura.jpg);*/
+}
+
+@font-face {
+    font-family: title;
+    src: url(../fonts/lazy_dog.ttf);
+}
+
+@font-face {
+    font-family: text;
+    src: url(../fonts/Sono_Proportional-Medium.ttf);
+}
+
+.div,
+.pagina {
+    display: flex;
+}
+
+/******************* seccion new *******************/
+
+.new {
+    flex: 1;
+    background: linear-gradient(to bottom,
+            #2c2e4d 0%,
+            #36324a 100%);
+    width: 25%;
+    padding: 20px;
+    height: auto;
+    font-family: text;
+    color: white;
+    min-height: 800px;
+}
+
+.imagen {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img {
+    height: 220px;
+}
+
+.new-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+/******************** seccion titulo ********************/
+
+.titulo {
+    font-family: text;
+    font-size: 5vh;
+    text-align: left;
+    color: #2c2e4d;
+}
+
+.redireccionar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.redireccionar form {
+    margin-left: 10px;
+}
+
+
+/****************** seccion table-alu ******************/
+
+.table {
+    flex: 3;
+    background-color: #9ca7c9;
+    width: 75%;
+    padding: 20px;
+    font-family: text;
+    color: #323338;
+    min-height: 700px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    position: relative;
+    cursor: pointer;
+}
+
+th {
+    text-align: center;
+
+}
+
+th,
+td {
+    border: 1px solid #323338;
+    padding: 8px;
+    text-align: left;
+    width: 150px;
+
+}
+
+th {
+    background-color: #3D455C;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #7d83a5;
+}
+
+tr:hover {
+    background-color: #6972a7;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boton-img img {
+    height: 20px;
+    width: 20px;
+}
+
+/****************** botones ******************/
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: text;
+}
+
+button[type="submit"] {
+    display: block;
+    background-color: #6981A7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: text;
+}
+
+button[type="submit"]:hover {
+    background-color: #4C5870;
+}
+
+
+button[type="radio"] {
+    color: aliceblue;
+    border: 1px solid #ccc;
+}
+
+details {
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1em;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/******************** seccion modificacion *******************/
+
+.paginamod {
+    background: linear-gradient(to bottom,
+            #2c2e4d 0%,
+            #585b91 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    font-family: text;
+    color:aliceblue;
+}
+
+.paginamod h1 {
+    font-family: text;
+    font-size: 10vh;
+    text-align: left;
+    color: #a6aed4;
+}
+

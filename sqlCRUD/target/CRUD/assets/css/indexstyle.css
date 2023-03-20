@@ -1,0 +1,75 @@
+/******************************************************/
+/*         JSP + BBDD - hoja de estilo de index       */
+/* Autora: Denisa Ramona Belean                       */
+/******************************************************/
+
+/******************** estilo general *******************/
+body {
+    background-image: url(../img/textura.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+@font-face {
+    font-family: title;
+    src: url(../fonts/lazy_dog.ttf);
+}
+
+@font-face {
+    font-family: text;
+    src: url(../fonts/Sono_Proportional-Medium.ttf);
+}
+
+.div {
+    display: flex;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: row;
+}
+
+/******************** seccion titulo *******************/
+
+.titulo {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    justify-content: top;
+}
+
+.titulo h1 {
+    font-family: text;
+    font-size: 10vh;
+    font-weight: bold;
+    text-align: left;
+    color: aliceblue;
+    text-shadow: rgb(33, 33, 33) 0.1em 0.1em 0.2em;
+}
+
+/******************** seccion botones *******************/
+
+.botones {
+    width: 40%;
+    padding-top: 30px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.botones p {
+    font-family: text;
+    font-size: 4vh;
+    text-align: center;
+    margin: 10px;
+    color: #6981A7;
+}
+
+.imagen img {
+    height: 200px;
+    margin: 5px;
+}
+
